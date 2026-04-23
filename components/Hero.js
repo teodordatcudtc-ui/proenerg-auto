@@ -5,8 +5,18 @@ import { stats } from "@/data/siteData";
 export default function Hero() {
   return (
     <section className="hero heroTop">
+      <div className="heroBackground">
+        <Image
+          src="https://images.unsplash.com/photo-1619642751034-765dfdf7c58e?auto=format&fit=crop&w=1600&q=80"
+          alt="Mecanic auto in service"
+          fill
+          priority
+          className="heroImage"
+        />
+      </div>
+      <div className="heroOverlay" />
       <div className="container heroGrid">
-        <div className="heroText">
+        <div className="heroText heroTextOnly">
           <h1>Performanta maxima pentru masina ta</h1>
           <p className="heroLead">
             La PROENERG AUTO oferim servicii complete pentru mentenanta si reparatii, astfel incat masina ta
@@ -25,15 +35,6 @@ export default function Hero() {
               </div>
             ))}
           </div>
-        </div>
-        <div className="heroImageWrap">
-          <Image
-            src="https://images.unsplash.com/photo-1619642751034-765dfdf7c58e?auto=format&fit=crop&w=1200&q=80"
-            alt="Mecanic auto in service"
-            fill
-            priority
-            className="heroImage"
-          />
         </div>
       </div>
     </section>

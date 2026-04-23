@@ -1217,3 +1217,131 @@ h5 {
     font-size: 0.9rem;
   }
 }
+
+/* Final responsive fixes */
+.mobileMenuToggle {
+  display: none;
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  background: transparent;
+  color: #fff;
+  width: 38px;
+  height: 38px;
+  border-radius: 8px;
+  font-size: 1.15rem;
+  line-height: 1;
+}
+
+.mobileNav {
+  display: none;
+}
+
+.hero {
+  position: relative;
+  overflow: hidden;
+}
+
+.heroBackground {
+  position: absolute;
+  inset: 0;
+}
+
+.heroOverlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(16, 25, 40, 0.68);
+}
+
+.heroGrid {
+  position: relative;
+  z-index: 2;
+}
+
+.heroTextOnly {
+  max-width: 760px;
+}
+
+.testimonialCard {
+  background: #ffffff;
+  border: 1px solid #e6ebf6;
+  border-radius: 12px;
+  box-shadow: 0 10px 28px rgba(29, 40, 62, 0.08);
+  padding: 18px;
+  text-align: left;
+}
+
+.testimonialCard p {
+  color: #5f6d86;
+}
+
+.testimonialCard strong {
+  display: inline-block;
+  margin-top: 6px;
+}
+
+@media (max-width: 740px) {
+  .mobileMenuToggle {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .mobileNav {
+    display: grid;
+    gap: 4px;
+    padding: 8px 0 12px;
+    border-top: 1px solid rgba(255, 255, 255, 0.14);
+    background: #273248;
+  }
+
+  .mobileNavLink,
+  .mobileNavCta {
+    color: #edf2ff;
+    padding: 10px 14px;
+    font-size: 0.95rem;
+  }
+
+  .mobileNavCta {
+    margin-top: 4px;
+    border-top: 1px solid rgba(255, 255, 255, 0.12);
+    color: #8fc0ff;
+    font-weight: 700;
+  }
+
+  .heroTop {
+    padding: 34px 0 24px;
+  }
+
+  .hero h1 {
+    margin-top: 6px;
+  }
+
+  .statsGrid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 10px;
+  }
+
+  .statsGrid > div {
+    border-top: 0;
+    border-left: 1px solid rgba(255, 255, 255, 0.2);
+    padding: 0 8px;
+    text-align: left;
+  }
+
+  .statsGrid > div:first-child {
+    border-left: 0;
+    padding-left: 0;
+  }
+
+  .statsGrid strong {
+    font-size: 1.26rem;
+  }
+
+  .statsGrid span {
+    font-size: 0.74rem;
+    line-height: 1.25;
+  }
+
+  .testimonialCard {
+    padding: 14px;
+  }
+}
