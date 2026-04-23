@@ -760,9 +760,10 @@ h5 {
 }
 
 .serviceItem a {
-  display: inline-flex;
+  display: flex;
   justify-content: center;
   align-items: center;
+  width: fit-content;
   margin: 10px auto 0;
   min-width: 128px;
   padding: 8px 14px;
@@ -989,11 +990,86 @@ h5 {
   }
 
   .callBtn {
-    display: inline-flex;
+    display: none;
+  }
+
+  .siteHeader {
+    padding-top: 10px;
+  }
+
+  .navWrap {
+    min-height: 56px;
+    padding: 0 14px;
+  }
+
+  .brand {
+    font-size: 1rem;
+  }
+
+  .heroTop {
+    padding: 20px 0 24px;
+  }
+
+  .heroGrid {
+    gap: 16px;
+  }
+
+  .heroText {
+    padding: 0;
+  }
+
+  .hero h1 {
+    font-size: clamp(1.45rem, 8vw, 1.9rem);
+    max-width: none;
+    margin-bottom: 10px;
+  }
+
+  .heroLead {
+    font-size: 0.95rem;
+    line-height: 1.55;
+  }
+
+  .heroButtons {
+    margin-top: 14px;
+  }
+
+  .primaryBtn,
+  .secondaryBlueBtn {
+    width: 100%;
   }
 
   .heroImageWrap {
-    min-height: 310px;
+    min-height: 220px;
+  }
+
+  .statsGrid {
+    margin-top: 16px;
+    gap: 10px;
+  }
+
+  .statsGrid > div {
+    border-left: 0;
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+    padding: 10px 0 0;
+  }
+
+  .statsGrid > div:first-child {
+    border-top: 0;
+    padding-top: 0;
+  }
+
+  .experienceBand {
+    padding: 16px 0 72px;
+  }
+
+  .experienceTitle {
+    font-size: 0.9rem;
+    line-height: 1.5;
+  }
+
+  .featuresSection {
+    margin-top: -52px;
+    padding-bottom: 18px;
   }
 
   .featureRow,
@@ -1010,6 +1086,134 @@ h5 {
   }
 
   .featureRow {
-    padding: 24px;
+    padding: 18px;
+    gap: 14px;
+  }
+
+  .featureRow h3 {
+    font-size: 1rem;
+    margin-bottom: 6px;
+  }
+
+  .featureRow p {
+    font-size: 0.9rem;
+    line-height: 1.5;
+  }
+
+  .section {
+    padding: 34px 0;
+  }
+
+  .splitHeading {
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 14px;
+    gap: 12px;
+  }
+
+  .splitHeading h2,
+  .aboutGrid h2,
+  .miniContactBand h2,
+  .sectionDark .sectionTitle h2,
+  .ctaBannerWrap h2 {
+    font-size: clamp(1.3rem, 6.2vw, 1.6rem);
+  }
+
+  .splitHeading p,
+  .aboutLead,
+  .miniContactBand p {
+    font-size: 0.93rem;
+    line-height: 1.6;
+  }
+
+  .serviceSection {
+    padding-top: 8px;
+  }
+
+  .serviceItem h3 {
+    font-size: 0.98rem;
+  }
+
+  .serviceItem p {
+    font-size: 0.9rem;
+    line-height: 1.5;
+  }
+
+  .serviceImageWrap {
+    min-height: 180px;
+  }
+
+  .aboutHighlight {
+    padding-top: 16px;
+    padding-bottom: 20px;
+  }
+
+  .aboutImageWrap {
+    min-height: 230px;
+  }
+
+  .miniContactBand {
+    padding: 28px 0;
+  }
+
+  .miniForm input {
+    min-height: 44px;
+  }
+
+  .sectionDark .sectionTitle {
+    text-align: left;
+    margin-bottom: 16px;
+  }
+
+  .testimonialCard {
+    text-align: left;
+    padding: 0;
+  }
+
+  .testimonialCard p {
+    font-size: 0.92rem;
+    line-height: 1.55;
+  }
+
+  .blogCard {
+    grid-template-columns: 1fr;
+    gap: 12px;
+    padding: 10px;
+  }
+
+  .blogThumb {
+    min-height: 180px;
+  }
+
+  .blogCard h3 {
+    font-size: 1rem;
+    margin-bottom: 6px;
+  }
+
+  .blogCard div:last-child p {
+    font-size: 0.9rem;
+    line-height: 1.5;
+  }
+
+  .ctaBanner {
+    padding: 28px 0;
+  }
+
+  .ctaBannerWrap {
+    gap: 14px;
+  }
+
+  .siteFooter {
+    padding-top: 0;
+  }
+
+  .footerGrid {
+    gap: 8px;
+    padding-top: 18px;
+  }
+
+  .footerGrid p {
+    margin: 6px 0;
+    font-size: 0.9rem;
   }
 }
